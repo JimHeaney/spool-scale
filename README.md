@@ -28,7 +28,7 @@ Version 1.2 will likely be the first stable release of the SpoolScale. Version 1
 [See the wiki on GitHub!](https://github.com/JimHeaney/SpoolScale/wiki) 
 
 ## Photos & Media
-(Coming Soon)
+![image](https://user-images.githubusercontent.com/20119374/209997095-e3109bc1-f0b0-4272-b7c6-e466496a7a56.png)
 
 ## Support Me
 You can buy me a coffee [here](https://www.buymeacoffee.com/jimheaney)!
