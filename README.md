@@ -1,14 +1,11 @@
 # SpoolScale
 
 ## Overview
-Have you ever run out of filament mid-print? The SpoolScale is a simple add-on device for any 3D printer that allows you to precisely know how much filament is left on your spool.
+Have you ever run out of filament mid-print? The SpoolScale is a simple add-on device for any 3D printer that allows you to precisely know how much filament is left on your spool. The SpoolScale can be integrated with any style 3D printer and spool holder, and can be connected to any wheatstone bridge load cell. Additional functionality can be unlocked by connecting the SpoolScale to a 3D printer directly via GPIO, i2C, or UART. 
 
-The SpoolScale uses an HX711 amplifier to interface with many different styles of load cell, depending on what works best for your specific 3D printer and spool size. The amount of filament remaining is then shown on a large 7-segment display. A user-configurable empty spool offset allows you to swap out your filament brand and type but still get accurate readings. The SpoolScale can be run fully independent of any other system, or can be integrated with your 3D printer through GPIO, I2C, or UART to allow for more advanced operation and configuration. The SpoolScale has a high-current warning output that will trigger when the amount of filament remaining drops below a user-configurable threshold, which can be used to light an indicator or sound a buzzer, for instance. The brightness of the display is user-configurable through an analog voltage input, allowing for a wide range of implementations. Some examples include using a GPIO pin on your printer motherboard to turn off the 7-segment displays while printing, wire up a potentiometer to manually set the desired brightness, or plugging in a photoresistor so the screen turns off when the room is dark, and only turns on when you turn on the lights. 
 
 ### More information can be found on the [GitHub Wiki](https://github.com/JimHeaney/spool-scale/wiki).
 
-## Photos & Media
-(Coming Soon)
 
 ## Current Release
 There are no stable versions for release. The latest WIP is Version 1.1
@@ -16,8 +13,22 @@ There are no stable versions for release. The latest WIP is Version 1.1
 ## Current State
 The SpoolScale is currently being developed to Version 1.2.
 
+## What's New
+Version 1.2 will likely be the first stable release of the SpoolScale. Version 1.1 was used as a proof of concept and for small-scale field testing. A number of bugs were immediately identified, and a number of other improvements will be made based on user feedback. These include:
+* Removing DIP switch configuration, instead adding RJ11 port for connecting an i2C keypad. 
+  * This will allow for more versatile configuration, including typing in spool weights directly, saving/loading 4 "favorite" spool weights, etc. 
+  * All of these settings will be exposed as i2C slave registers, so the keypad is not needed if using the SpoolScale as an i2C device. 
+* Added more robust switch for selecting SpoolScale mode 
+  * Removed UART mode, options are now GPIO, standalone, and i2C.
+* Redid layout of PCB, removed secondary AtTiny footprint
+* General component optimization, layout improvements, etc. 
+
+
 ## Instructions & Further Documentation
 [See the wiki on GitHub!](https://github.com/JimHeaney/SpoolScale/wiki) 
+
+## Photos & Media
+(Coming Soon)
 
 ## Support Me
 You can buy me a coffee [here](https://www.buymeacoffee.com/jimheaney)!
@@ -26,3 +37,4 @@ You can buy me a coffee [here](https://www.buymeacoffee.com/jimheaney)!
 This project is licensed under the Creative Commons 4.0 Attribution-NonCommercial-ShareAlike. For more information, click [here](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 If you are interested in using this project under a different license (e.g. for commercial use), please contact me. 
+
