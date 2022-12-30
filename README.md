@@ -1,6 +1,6 @@
 # SpoolScale
 
-## Overview
+## Summary
 Have you ever run out of filament mid-print? The SpoolScale is a simple add-on device for any 3D printer that allows you to precisely know how much filament is left on your spool. The SpoolScale can be integrated with any style 3D printer and spool holder, and can be connected to any wheatstone bridge load cell. Additional functionality can be unlocked by connecting the SpoolScale to a 3D printer directly via GPIO, i2C, or UART. 
 
 
