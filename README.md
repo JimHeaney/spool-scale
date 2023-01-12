@@ -27,7 +27,7 @@ Version 1.2+ Proposed Changes:
 * Change 6P6C RJ12 to more common 6P4C RJ11 (remove plug detection)
 * Replace resistor nets with easier to assemble discrete 0603 resistors
 * Reduce passive component variety for easier assembly
-* Change mode selection to GPIO (also works as standalone), UART (allows setting configuration with USB/UART adapter) or i2c Slace
+* Change mode selection to GPIO (also works as standalone), UART (allows setting configuration with USB/UART adapter) or i2c Slave
 
 ## Instructions & Further Documentation
 [See the wiki on GitHub!](https://github.com/JimHeaney/SpoolScale/wiki) 
