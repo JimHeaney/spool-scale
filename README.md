@@ -25,7 +25,7 @@ Version 1.2 will likely be the first stable release of the SpoolScale. Version 1
 
 Version 1.2+ Proposed Changes:
 * Change 6P6C RJ12 to more common 6P4C RJ11 (remove plug detection)
-* Replace resistor nets with easier to assemble discrete 0603 resistors
+* Replace resistor arrays with easier to assemble discrete 0603 resistors
 * Reduce passive component variety for easier assembly
 * Change mode selection to GPIO (also works as standalone), UART (allows setting configuration with USB/UART adapter) or i2c Slave
 
