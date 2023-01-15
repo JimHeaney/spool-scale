@@ -14,6 +14,9 @@ There are no stable versions for release. The latest WIP is Version 1.1
 The SpoolScale is currently being developed to Version 1.2.
 
 ## What's New
+
+[Read More on the Version Information page!](https://github.com/JimHeaney/spool-scale/wiki/Version-Information)
+
 Version 1.2 will likely be the first stable release of the SpoolScale. Version 1.1 was used as a proof of concept and for small-scale field testing. A number of bugs were immediately identified, and a number of other improvements will be made based on user feedback. These include:
 * Removing DIP switch configuration, instead adding RJ11 port for connecting an i2C keypad. 
   * This will allow for more versatile configuration, including typing in spool weights directly, saving/loading 4 "favorite" spool weights, etc. 
@@ -23,12 +26,8 @@ Version 1.2 will likely be the first stable release of the SpoolScale. Version 1
 * Redid layout of PCB, removed secondary AtTiny footprint
 * General component optimization, layout improvements, etc. 
 
-Version 1.2+ Proposed Changes:
+Future Proposed Changes:
 * Change 6P6C RJ12 to more common 6P4C RJ11 (remove plug detection)
-* Replace resistor arrays with easier to assemble discrete 0603 resistors
-* Reduce passive component variety for easier assembly
-* Replace VQFN microcontroller with SOIC or QFP variant for easier assembly. 
-* Change mode selection to GPIO (also works as standalone), UART (allows setting configuration with USB/UART adapter) or i2c Slave
 
 ## Instructions & Further Documentation
 [See the wiki on GitHub!](https://github.com/JimHeaney/SpoolScale/wiki) 
